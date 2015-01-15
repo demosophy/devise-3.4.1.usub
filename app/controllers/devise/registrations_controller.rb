@@ -21,7 +21,8 @@ class Devise::RegistrationsController < DeviseController
   def create
     flash[:info] = invite_only_text
     redirect_to root_path
-  end
+
+    ###Disable Sign Up for Beta###
     # build_resource(sign_up_params)
 
     # resource_saved = resource.save
